@@ -1,15 +1,21 @@
 package com.company;
 
-public class TouristTicket {
+public class TouristTicket extends Ticket {
     private String hotelAddress;
     private String selectedTouristLocation;
 
-    String getHotelAddress(){
-        return this.hotelAddress= this.hotelAddress;
+    public TouristTicket( String hotelAddress,String selectedTouristLocation) {
+        this.hotelAddress = hotelAddress;
+        this.selectedTouristLocation = selectedTouristLocation;
     }
 
-    String TouristLocation (){
-        return this.selectedTouristLocation= this.selectedTouristLocation;
+
+    public String getHotelAddress(){
+        return this.hotelAddress= hotelAddress;
+    }
+
+   public String TouristLocation (){
+        return this.selectedTouristLocation= selectedTouristLocation;
     }
 
     /*void removeTouristLocation(String location){

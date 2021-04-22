@@ -12,14 +12,13 @@ public class Ticket {
     private float price;
     private boolean cancelled;
 
-
    public String checkStatus(){
         return this.arrivalDateTime;
     }
 
-   // public String getFlightDuration(){
-     //   String str = this.departureDateTime - this.arrivalDateTime;
-       // return str;
+    //public String getFlightDuration(){
+       // String st = this.departureDateTime - this.arrivalDateTime;
+        //return st;
     //}
 
    // public void cancel(){
