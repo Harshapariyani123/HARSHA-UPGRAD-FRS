@@ -4,22 +4,27 @@ public class Passenger {
     private static int idCounter;
     private int id;
 
+    static {
+        idCounter = 0;
+    }
 
-    private static class Address {
+    // Contact and Address classes nested inside the Passenger class
+
+    private static class Address {        //Constructor for Address Class
         String street, city, state;
-
         public Address(String street, String city, String state) {
             this.street = street;
             this.city = city;
             this.state = state;
         }
     }
+
     private Address address;
 
     private static class Contact {
         String name, phone, email;
 
-        public Contact(String name, String phone, String email) {
+        public Contact(String name, String phone, String email) {      //Constructor for Contact Class
             this.name = name;
             this.phone = phone;
             this.email = email;
@@ -31,6 +36,7 @@ public class Passenger {
         idCounter = 0;
     }
 
+    //Constructor for Passenger Class
     public Passenger(String addressStreet, String addressCity,
                            String addressState, String contactName, String contactPhone,
                            String contactEmail) {
@@ -48,6 +54,10 @@ public class Passenger {
 
     public String getContactDetails() {
         return contact.name + ", " + contact.phone + ", " + contact.email;
+    }
+
+    public static int getPassengerCount() {
+        return idCounter;
     }
 
 }
