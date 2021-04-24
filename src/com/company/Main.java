@@ -29,7 +29,6 @@ public class Main {
         System.out.println("The Pnr is: " + ticket.getPnr());
     }
 
-
 }
 
 
