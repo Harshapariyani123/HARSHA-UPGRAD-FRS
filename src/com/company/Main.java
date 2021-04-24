@@ -26,7 +26,7 @@ public class Main {
     }
 
     public static void printTicketDetails(Ticket ticket) {       //method to print ticket details
-        System.out.println("The Pnr is: " + ticket.getPnr());
+        System.out.println("The Pnr of ticket is: " + ticket.getPnr());
     }
 
 }
